@@ -1,51 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Izati Balqis ❤️</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Izati Balqis ❤️</title>
 
-<style>
-body{
-  margin:0;
-  font-family:Georgia,serif;
-  background:#fde6ea;
-  text-align:center;
-  color:#5a2a2a;
-}
-img{
-  width:85%;
-  max-width:400px;
-  border-radius:20px;
-  margin:20px 0;
-}
-button{
-  background:#f4a7b9;
-  border:none;
-  padding:14px 28px;
-  border-radius:30px;
-  font-size:16px;
-  color:white;
-}
-</style>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #fde6ea, #fff);
+      color: #5a2a2a;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.15em;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    img {
+      width: 85%;
+      max-width: 400px;
+      border-radius: 20px;
+      margin: 30px 0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    button {
+      background: #f4a7b9;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #5a2a2a;
+      margin: 25px 0;
+    }
+
+    button:hover {
+      background: #f28aa3;
+    }
+
+    .signature {
+      margin-top: 40px;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container">
+    <h1>For Izati Balqis ❤️</h1>
 
-<h1>Izati Balqis ❤️</h1>
-<p>A letter written with all my heart</p>
+    <p>
+      I made this page just for you.
+      Not because I had to, but because I wanted to.
+    </p>
 
-<img src="photo1.jpg">
+    <p>
+      You have a way of making things feel calmer,
+      lighter, and warmer without even trying.
+    </p>
 
-<br><br>
+    <img src="photo1.jpg" alt="You">
 
-<button onclick="document.getElementById('song').play(); this.style.display='none';">
-Tap to play music 🎵
-</button>
+    <p>
+      You make my days calmer,  
+      my heart warmer,  
+      and my life better just by being in it.
+    </p>
 
-<audio id="song">
-  <source src="until-i-found-you.mp3" type="audio/mpeg">
-</audio>
+    <p>
+      This page is simple,  
+      but the feelings behind it are real.
+    </p>
 
+    <p>
+      I appreciate you.  
+      I’m proud of you.  
+      And I care about you more than you know.
+    </p>
+
+    <button id="playBtn">Play our song 🎵</button>
+
+    <audio id="song">
+      <source src="until-i-found-you.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="signature">
+      — Yours, always ❤️
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("playBtn").addEventListener("click", function () {
+      document.getElementById("song").play();
+      this.style.display = "none";
+    });
+  </script>
 </body>
 </html>
